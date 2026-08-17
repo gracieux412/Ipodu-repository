@@ -19,7 +19,7 @@ export const personalInfo = {
   cvSummary: 'IT Officer with 3 years at Destiny Community Development Initiative (DECODI) and a proven record in systems administration, web and database management, technical support, and team training across Ugandan institutions.',
   metrics: [
     { label: 'Years at DECODI', value: '3' },
-    { label: 'Years of IT Experience', value: '5+' },
+    { label: 'Years of IT Experience', value: '3+' },
     { label: 'Staff & Students Trained', value: '150+' },
     { label: 'Academic GPA (BSc. IT)', value: '4.5' },
   ]
