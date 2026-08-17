@@ -10,7 +10,7 @@ export const personalInfo = {
     'Database & Records Manager',
     'Graphics & Multimedia Designer'
   ],
-  email: 'scoviaipodu@gmail.com',
+  email: 'scoviaipodu8@gmail.com',
   phone: '0774390069',
   internationalPhone: '+256 774 390 069',
   whatsappUrl: 'https://wa.me/256774390069',
