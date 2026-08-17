@@ -9,6 +9,7 @@ export interface ExperienceItem {
   description: string;
   highlights: string[];
   technologies: string[];
+  cvInclude?: boolean;
 }
 
 export interface EducationItem {

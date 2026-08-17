@@ -17,7 +17,7 @@ import { ExperienceItem } from '../types';
 
 export const ExperienceTimeline: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [expandedId, setExpandedId] = useState<string | null>(experiences[0]?.id || null);
+  const [expandedId, setExpandedId] = useState<string | null>('decodi');
 
   const categories = [
     { id: 'all', label: 'All Roles' },

@@ -15,16 +15,46 @@ export const personalInfo = {
   internationalPhone: '+256 774 390 069',
   whatsappUrl: 'https://wa.me/256774390069',
   location: 'Uganda (Kampala / Ngora / Soroti / Mbale)',
-  bio: 'Professional, highly skilled IT Officer with 3+ years of progressive experience in IT infrastructure management, website development and administration, database architecture, troubleshooting, and enterprise tech support. Proven track record in training cross-functional staff, securing institutional networks, and delivering high-impact multimedia designs.',
+  bio: 'IT Officer and systems specialist with 3 years at DECODI and broad experience across education, healthcare, and community development. Strong in infrastructure support, web and database administration, staff training, and creative media.',
+  cvSummary: 'IT Officer with 3 years at Destiny Community Development Initiative (DECODI) and a proven record in systems administration, web and database management, technical support, and team training across Ugandan institutions.',
   metrics: [
-    { label: 'Years of Experience', value: '3+' },
+    { label: 'Years at DECODI', value: '3' },
+    { label: 'Years of IT Experience', value: '5+' },
     { label: 'Staff & Students Trained', value: '150+' },
     { label: 'Academic GPA (BSc. IT)', value: '4.5' },
-    { label: 'Systems & Web Deployments', value: '10+' },
   ]
 };
 
+export const cvExperienceIds = [
+  'decodi',
+  'mukura-ss',
+  'lao-tech',
+  'bethesda-hospital',
+  'ndejje-ss',
+];
+
+export const cvAdditionalExperience = [
+  "Children's Hope Chest — UG-LEDP Trainee & Community Advocate (2022)",
+  'ACHEST Organization — IT & Database Systems Intern (2019)',
+];
+
 export const experiences: ExperienceItem[] = [
+  {
+    id: 'decodi',
+    role: 'IT Officer',
+    organization: 'Destiny Community Development Initiative (DECODI)',
+    location: 'Uganda',
+    period: '08/2023 – Present',
+    type: 'Full-time',
+    category: 'it-systems',
+    description: 'Leads IT operations, web administration, database management, and staff digital support for community development programs.',
+    highlights: [
+      'Manages organizational IT systems, networks, and day-to-day technical support.',
+      'Administers websites, databases, and digital records for program delivery.',
+      'Trains staff on systems, data tools, and secure computing practices.',
+    ],
+    technologies: ['IT Systems', 'Web Administration', 'Databases', 'Staff Training'],
+  },
   {
     id: 'mukura-ss',
     role: 'ICT Lab Technician & ICT Teacher',
@@ -33,14 +63,13 @@ export const experiences: ExperienceItem[] = [
     period: '10/2022 – 07/2024',
     type: 'Full-time',
     category: 'it-systems',
-    description: 'Directed institutional IT infrastructure, laboratory operations, cybersecurity maintenance, and secondary computer studies curriculum.',
+    description: 'Managed IT infrastructure, computer lab operations, and ICT teaching at a secondary school.',
     highlights: [
-      'Managed end-to-end IT infrastructure across the department, including network switches, server hardware, OS patches, security updates, peripheral drivers, and BIOS firmware flashing.',
-      'Provided tier-1 and tier-2 technical support for school staff and conducted digital security and data protection training workshops.',
-      'Delivered structured Computer Studies instruction and administered the official school website updates and performance.',
-      'Maintained 100% operational uptime for the central computer lab during national academic examinations.'
+      'Maintained networks, servers, hardware, and security updates across the ICT department.',
+      'Provided technical support and digital safety training for staff and students.',
+      'Taught Computer Studies and managed the school website.',
     ],
-    technologies: ['Network Hardware', 'Server Management', 'BIOS/OS Patching', 'Cybersecurity', 'Web Administration', 'Computer Studies Pedagogy']
+    technologies: ['Network & Server Admin', 'Cybersecurity', 'Web Admin', 'ICT Teaching'],
   },
   {
     id: 'lao-tech',
@@ -50,15 +79,13 @@ export const experiences: ExperienceItem[] = [
     period: '05/2023 – 09/2023',
     type: 'Internship',
     category: 'web-software',
-    description: 'Delivered website development, graphic design, database architecture, and computer systems engineering for client projects.',
+    description: 'Supported client projects in web development, graphic design, databases, and systems maintenance.',
     highlights: [
-      'Executed full website design, configuration, and ongoing maintenance using WordPress CMS and custom web styling.',
-      'Created modern vector graphics, branding identities, and marketing layouts with Adobe Illustrator and Adobe Photoshop.',
-      'Engineered software application logic and modules utilizing Java and C programming languages.',
-      'Administered relational databases, performing schema maintenance, indexing, and automated backup routines.',
-      'Conducted hardware diagnostics, component replacements, board repairs, and preventive system maintenance.'
+      'Built and maintained WordPress websites and marketing graphics.',
+      'Developed application modules and managed relational databases.',
+      'Performed hardware diagnostics and preventive system maintenance.',
     ],
-    technologies: ['WordPress', 'Adobe Photoshop', 'Adobe Illustrator', 'Java', 'C Language', 'SQL / Databases', 'Hardware Diagnostics']
+    technologies: ['WordPress', 'Adobe Suite', 'Java/C', 'Databases', 'Hardware Support'],
   },
   {
     id: 'bethesda-hospital',
@@ -68,14 +95,13 @@ export const experiences: ExperienceItem[] = [
     period: '04/2020 – 08/2021',
     type: 'Internship',
     category: 'it-systems',
-    description: 'Spearheaded medical informatics support, healthcare database entries, staff technical training, and web maintenance.',
+    description: 'Supported hospital IT systems, patient records, staff training, and web maintenance.',
     highlights: [
-      'Trained over 20 clinical and administrative healthcare workers on internal web portals, electronic medical data entry, and digital essentials.',
-      'Managed accurate patient record data entry, verification, and retrieval within the hospital central database.',
-      'Maintained mission-critical healthcare systems, resolving network and software trouble tickets swiftly.',
-      'Maintained the hospital official website and structured document indexing pipelines into standard compliant formats.'
+      'Trained 20+ healthcare staff on portals, data entry, and digital workflows.',
+      'Managed patient records and resolved network and software issues.',
+      'Maintained the hospital website and document indexing processes.',
     ],
-    technologies: ['Healthcare Databases', 'Patient Records Management', 'Hospital Web Portal', 'Staff IT Training', 'Network Troubleshooting']
+    technologies: ['Healthcare IT', 'Records Management', 'Staff Training', 'Web Support'],
   },
   {
     id: 'children-hope-chest',
@@ -85,13 +111,13 @@ export const experiences: ExperienceItem[] = [
     period: '05/2022 – 08/2022',
     type: 'Training',
     category: 'education-training',
-    description: 'Advocacy, entrepreneurship training, organizational vulnerability assessments, and resource utilization optimization.',
+    description: 'Community advocacy, entrepreneurship training, and organizational development support.',
     highlights: [
-      'Facilitated workshops on child advocacy rights, self-awareness development, and youth entrepreneurship competencies.',
-      'Conducted research to identify institutional vulnerabilities and formulated resource optimization strategies.',
-      'Trained participants on professional workplace ethics, sustainable livelihoods, and community leadership.'
+      'Facilitated workshops on advocacy, entrepreneurship, and youth leadership.',
+      'Assessed institutional needs and supported resource planning.',
     ],
-    technologies: ['Advocacy Frameworks', 'Resource Optimization', 'Vulnerability Assessment', 'Youth Mentorship', 'Ethics & Leadership']
+    technologies: ['Advocacy', 'Training', 'Community Development'],
+    cvInclude: false,
   },
   {
     id: 'ndejje-ss',
@@ -101,13 +127,13 @@ export const experiences: ExperienceItem[] = [
     period: '04/2019 – 02/2020',
     type: 'Full-time',
     category: 'education-training',
-    description: 'Coordinated computer lab operations, school website & media channels, photography, and student ICT instruction.',
+    description: 'Coordinated ICT lab operations, school media, and student computer instruction.',
     highlights: [
-      'Managed computer laboratory equipment, routine hardware servicing, and software installations.',
-      'Administered school digital media platforms, official web presence, and event photography.',
-      'Instructed secondary school students in foundational computer literacy and applied ICT concepts.'
+      'Managed lab equipment, hardware servicing, and software installations.',
+      'Handled school web presence, media, and event photography.',
+      'Taught foundational ICT to secondary students.',
     ],
-    technologies: ['Lab Management', 'Event Photography', 'Social Media Management', 'Hardware Maintenance', 'ICT Curriculum']
+    technologies: ['Lab Management', 'Media & Photography', 'ICT Teaching'],
   },
   {
     id: 'achest-org',
@@ -117,14 +143,13 @@ export const experiences: ExperienceItem[] = [
     period: '06/2019 – 08/2019',
     type: 'Internship',
     category: 'web-software',
-    description: 'Contributed to Android mobile data collection tools, relational database systems, and information security.',
+    description: 'Supported mobile data tools, databases, and information security during internship.',
     highlights: [
-      'Acquired and applied advanced skills in database architecture, querying, and system maintenance.',
-      'Implemented digital information security protocols and safe computing standards.',
-      'Performed preventative computer hardware repairs and software troubleshooting.',
-      'Contributed to Android mobile development and customized data collection forms via KoboCollect.'
+      'Worked on database systems, security protocols, and hardware troubleshooting.',
+      'Contributed to Android and KoboCollect field data collection tools.',
     ],
-    technologies: ['Android Development', 'KoboCollect', 'Database Management', 'Information Security', 'Hardware Repair']
+    technologies: ['Databases', 'Mobile Data Tools', 'Information Security'],
+    cvInclude: false,
   }
 ];
 
@@ -181,71 +206,68 @@ export const education: EducationItem[] = [
 export const skillCategories: SkillCategory[] = [
   {
     id: 'it-infrastructure',
-    name: 'IT Infrastructure & Hardware',
+    name: 'IT & Infrastructure',
     iconName: 'Server',
-    description: 'Enterprise hardware diagnosis, networking equipment, server configuration, and firmware management.',
+    description: 'Hardware, networks, servers, and technical support.',
     skills: [
-      { name: 'Computer Hardware & Maintenance', level: 95, tag: 'Core' },
-      { name: 'Server & Network Administration', level: 90, tag: 'Infrastructure' },
-      { name: 'OS Patches, Drivers & BIOS Updates', level: 92, tag: 'Systems' },
-      { name: 'Technical Support & Helpdesk', level: 95, tag: 'Support' },
-      { name: 'Lab & Equipment Management', level: 94, tag: 'Operations' },
-      { name: 'Information & System Security', level: 88, tag: 'Security' }
+      { name: 'Hardware & Network Systems', level: 92, tag: 'Core' },
+      { name: 'Server & Lab Management', level: 90, tag: 'Operations' },
+      { name: 'Technical Support & Security', level: 93, tag: 'Support' },
     ]
   },
   {
     id: 'web-software',
-    name: 'Web & Software Engineering',
+    name: 'Web & Software',
     iconName: 'Code',
-    description: 'Modern content management, programming logic, frontend development, and mobile collection tooling.',
+    description: 'Websites, programming, and mobile data tools.',
     skills: [
-      { name: 'WordPress Development & Management', level: 92, tag: 'Web' },
-      { name: 'Java Programming', level: 85, tag: 'Software' },
-      { name: 'C Programming Language', level: 82, tag: 'Software' },
-      { name: 'HTML5 / CSS3 / JavaScript', level: 88, tag: 'Frontend' },
-      { name: 'Android & KoboCollect Integration', level: 86, tag: 'Mobile Data' },
-      { name: 'Web Hosting & Maintenance', level: 90, tag: 'DevOps' }
+      { name: 'Web Development & CMS', level: 90, tag: 'Web' },
+      { name: 'Programming (Java / C)', level: 84, tag: 'Software' },
+      { name: 'Mobile & Data Collection', level: 86, tag: 'Mobile' },
     ]
   },
   {
     id: 'database-data',
-    name: 'Database & Records Management',
+    name: 'Database & Records',
     iconName: 'Database',
-    description: 'Database architecture, data validation pipelines, hospital informatics, and structured backup integrity.',
+    description: 'Data management, records, and backups.',
     skills: [
-      { name: 'Database Administration (DBMS)', level: 90, tag: 'Data' },
-      { name: 'SQL Querying & Schema Design', level: 85, tag: 'Database' },
-      { name: 'Hospital & Patient Data Systems', level: 92, tag: 'Healthcare' },
-      { name: 'Data Validation & Formatting', level: 94, tag: 'Data Entry' },
-      { name: 'Backup & Recovery Procedures', level: 88, tag: 'Integrity' }
+      { name: 'Database Administration', level: 90, tag: 'Data' },
+      { name: 'Records & Data Management', level: 92, tag: 'Records' },
+      { name: 'Backup & Data Integrity', level: 88, tag: 'Integrity' },
     ]
   },
   {
     id: 'graphics-multimedia',
-    name: 'Graphics, Design & Media',
+    name: 'Design & Media',
     iconName: 'Palette',
-    description: 'Editorial magazine design, vector illustration, digital photo editing, and video compilation.',
+    description: 'Creative design, publishing, and multimedia.',
     skills: [
-      { name: 'Adobe Photoshop', level: 90, tag: 'Design' },
-      { name: 'Adobe Illustrator', level: 88, tag: 'Vector' },
-      { name: 'Magazine & Editorial Publishing', level: 92, tag: 'Print & Digital' },
-      { name: 'Commercial Photography', level: 85, tag: 'Media' },
-      { name: 'Videography & Video Editing', level: 84, tag: 'Video' }
+      { name: 'Adobe Creative Suite', level: 90, tag: 'Design' },
+      { name: 'Print & Digital Publishing', level: 90, tag: 'Publishing' },
+      { name: 'Photography & Video', level: 85, tag: 'Media' },
     ]
   },
   {
     id: 'leadership-mentorship',
-    name: 'Leadership, Training & Advocacy',
+    name: 'Training & Leadership',
     iconName: 'Users',
-    description: 'Empowering teams through structured computer training, student instruction, and community advocacy.',
+    description: 'Instruction, mentorship, and team support.',
     skills: [
-      { name: 'Staff & Medical Team Training', level: 95, tag: 'Instruction' },
-      { name: 'ICT Curriculum Teaching', level: 96, tag: 'Education' },
-      { name: 'Problem Solving & Analytical Thinking', level: 94, tag: 'Strategy' },
-      { name: 'Child Advocacy & Community Mentorship', level: 90, tag: 'Social Impact' },
-      { name: 'Cross-functional Communication', level: 95, tag: 'Soft Skills' }
+      { name: 'Staff & Team Training', level: 95, tag: 'Training' },
+      { name: 'ICT Education', level: 94, tag: 'Education' },
+      { name: 'Community & Advocacy', level: 90, tag: 'Leadership' },
     ]
   }
+];
+
+export const coreTools = [
+  'WordPress',
+  'Adobe Suite',
+  'SQL / DBMS',
+  'Java & C',
+  'Network & Server Tools',
+  'Microsoft Office',
 ];
 
 export const projects: ProjectItem[] = [
